@@ -1,6 +1,13 @@
 var choosen = "";//用于保存待做的内容
 var finishedText = "";//用于保存已做的内容
 
+function changeBtn(isable){
+        var btn_c = document.getElementById("btn_change");
+        btn_c.disabled = isable;
+        var btn_ul = document.getElementById("btn_ulChange");
+        btn_ul.disabled = isable;
+}
+
 //只能添加到待做
 function add(){
     var waitToDo = document.createElement("li");
@@ -15,10 +22,7 @@ function add(){
         //把编辑框的内容改成和事件相同的内容
         input.value = waitToDo.innerHTML;
         choosen = waitToDo.innerHTML;
-        var btn_c = document.getElementById("btn_change");
-        btn_c.disabled = false;
-        var btn_ul = document.getElementById("btn_ulChange");
-        btn_ul.disabled = false;
+        changeBtn(false);
     }
 }
 
@@ -47,10 +51,7 @@ function change(){
         if(Uarry[i].innerHTML == choosen){
             //将li的内容修改为文本框中的内容
             Uarry[i].innerHTML = input.value;
-            var btn_c = document.getElementById("btn_change");
-            btn_c.disabled = true;
-            var btn_ul = document.getElementById("btn_ulChange");
-            btn_ul.disabled = true;
+            changeBtn(true);
             alert("内容修改成功")
         }
     }
@@ -69,10 +70,7 @@ function ulChange(){
             Uarry[i].remove();
 
             //修改按钮的可用不可用
-            var btn_c = document.getElementById("btn_change");
-            btn_c.disabled = true;
-            var btn_ul = document.getElementById("btn_ulChange");
-            btn_ul.disabled = true;
+            changeBtn(true);
             alert("修改为已做成功")
 
             finished.onclick = function(){

@@ -34,6 +34,7 @@ function Delete(){
             var btn_d = document.getElementById("btn_del");
             btn_d.disabled = true;
             Uarry[i].remove();
+            alert("成功删除选中已做事件")
         }
     }
 }
@@ -50,6 +51,7 @@ function change(){
             btn_c.disabled = true;
             var btn_ul = document.getElementById("btn_ulChange");
             btn_ul.disabled = true;
+            alert("内容修改成功")
         }
     }
 }

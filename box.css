@@ -1,0 +1,64 @@
+h1,h2
+{
+    text-align: center;
+    background-color: #ece6c9;
+    font-size: 40px;
+    height: 60px;
+}
+
+#mainarea
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+#mainarea #col_1
+{
+    width: 17%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    height: 430px;
+    background-color: floralwhite;
+    border-style: solid;
+    border-color: black;
+    font-size: 22px;
+}
+
+#mainarea #col_2
+{
+    background-color: floralwhite;
+    width: 75%;
+    float: right;
+    text-align: left;
+    padding: 20px;
+    height: 430px;
+    border-style: solid;
+    border-color: black;
+}
+
+#wait,#finished
+{
+    text-align: left;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#editAndShow
+{
+    font-size: 26px;
+}
+
+#br_1
+{
+    height: 1px;
+}
+
+button
+{
+    height: 52px;
+    width: 150px;
+    font-size: 30px;
+}

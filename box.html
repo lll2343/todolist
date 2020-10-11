@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>todolist</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="box.css">
+        <script src="func.js">
+        </script>
+    </head>
+    <body>
+        <h1>To Do List</h1>
+        <hr>
+        <div id="mainarea">
+            <div id="col_1">
+                <details>
+                    <summary>待做</summary>
+                    <ul id="wait">
+
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>已做</summary>
+                    <ul id="finished">
+                        
+                    </ul>
+                </details>
+            </div>
+
+            <div id="col_2">
+                <textarea name="" id="editAndShow" cols="70" rows="13"></textarea>
+                <br id="br_1">
+                <button onclick="add()">添加</button>
+                <button id="btn_del" onclick="Delete()" disabled>删除</button>
+                <button id="btn_change" onclick="change()" disabled>修改</button>
+                <button id="btn_ulChange" onclick="ulChange()" disabled>改为已做</button>
+                <button onclick="about()">关于</button>
+            </div>
+        </div>
+        
+    </body>
+</html>
